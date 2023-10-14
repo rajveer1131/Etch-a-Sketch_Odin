@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-A-Sketch</title>
+</head>
+
+<body>
+    <h1>Etch-A-Sketch</h1>
+    
+    <div class="changeSize">
+        <span >Size :- </span>
+        <span class="size">16 * 16 </span>
+        
+        <!-- Range slider for grid size -->
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="16" class="slider" >
+          </div>
+    </div>
+
+    <!-- Updates grid based on user choice of grid size -->
+    <button onclick="getSize()">Apply</button>
+
+    <!-- Container which holds the Output grid -->
+    <div class="container"></div>
+
+
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
