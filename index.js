@@ -15,6 +15,7 @@ function getSize() {
   createGrid(row_size, col_size); 
 }
 
+
 function createGrid(row_size, col_size) {
   container.innerHTML = "";
   
@@ -30,12 +31,13 @@ function createGrid(row_size, col_size) {
       
       cell.classList.add("cell");
 
-      cell.addEventListener("mouseover", () => {
+      cell.addEventListener("mouseover",cellChange);
+     
+
+      function cellChange(){
         cell.classList.add("black");
-      });
-      cell.addEventListener("touchmove", () => {
-        cell.classList.add("black");
-      });
+      }
+     
 
       container.appendChild(cell);
     }
@@ -43,4 +45,4 @@ function createGrid(row_size, col_size) {
 }
 
 /*      To create the initial grid      */
-createGrid(10, 10);
+createGrid(16, 16);
