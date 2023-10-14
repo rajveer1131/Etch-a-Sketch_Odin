@@ -33,6 +33,9 @@ function createGrid(row_size, col_size) {
       cell.addEventListener("mouseover", () => {
         cell.classList.add("black");
       });
+      cell.addEventListener("focus", () => {
+        cell.classList.add("black");
+      });
 
       container.appendChild(cell);
     }
