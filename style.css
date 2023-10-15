@@ -9,6 +9,27 @@ body {
   align-items: center;
   background-color: rgb(40, 218, 185);
 }
+.big-container{
+  /* width: 100%; */
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.changeSize{
+  margin-right: 5em;
+  /* font-size: 3rem; */
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+}
+
+.changeSize p,.size{
+  font-size: 3rem;
+}
 
 
 .container {
@@ -34,13 +55,40 @@ body {
   /* background-color: rgb(209, 206, 206); */
   background-color: rgb(240, 237, 237);
 
-  /* border-radius: 5px; */
+  border-radius: .5px;
 }
 
-.black {
+.red {
+  
+  background-color: rgba(233, 26, 37, 0.95);
+}
+.blue{
+  
+  background-color: rgba(14, 87, 223, 0.95);
+}
+.pink {
+  
+  background-color: rgba(239, 12, 179, 0.95);
+}
+.green {
+  
+  background-color: rgba(20, 240, 82, 0.95);
+}
+.yellow {
+  
+  background-color: rgba(237, 219, 18, 0.95);
+}
+.orange {
+  
+  background-color: rgba(236, 101, 11, 0.95);
+}
+.default {
   /* background-color: #457b9d; */
   background-color: rgba(19, 123, 214, 0.95);
+
+  
 }
+
 h1 {
   font-size: 2.5rem;
 }
@@ -48,11 +96,16 @@ span {
   font-size: 1.6rem;
   margin-top: 5px;
 }
+.slider{
+  width: 100%;
+}
 button {
   font-size: 2rem;
   padding: 5px;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 1em;
   margin-right: 5px;
+  width: 100%;
+  
   
 }

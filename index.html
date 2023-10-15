@@ -9,24 +9,32 @@
 </head>
 
 <body>
+
     <h1>Etch-A-Sketch</h1>
-    
-    <div class="changeSize">
-        <span >Size :- </span>
-        <span class="size">16 * 16 </span>
+    <div class="big-container">
         
-        <!-- Range slider for grid size -->
-        <div class="slideContainer">
-            <input type="range" min="1" max="100" value="16" class="slider" >
-          </div>
+        <div class="changeSize">
+            <p>Size :- <span class="size">16 * 16 </span></p>
+            
+            
+            <!-- Range slider for grid size -->
+            <div class="slideContainer">
+                <input type="range" min="1" max="100" value="16" class="slider" >
+            </div>
+            <button onclick="getSize()">Change size</button>
+            <button onclick="randomColor()">Random color</button>
+            <button onclick="defaultColor()">Default color</button>
+            <button onclick="eraseColor()">Eraser</button>
+
+        </div>
+        
+        <!-- Updates grid based on user choice of grid size -->
+        
+        
+        <!-- Container which holds the Output grid -->
+        <div class="container"></div>
     </div>
-
-    <!-- Updates grid based on user choice of grid size -->
-    <button onclick="getSize()">Apply</button>
-
-    <!-- Container which holds the Output grid -->
-    <div class="container"></div>
-
+        
 
     </script>
 
